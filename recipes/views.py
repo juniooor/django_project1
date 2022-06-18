@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'recipes/home.html') 
-    # para evitar conflitos de arquivos criar um space name na pasta template
+    # para evitar conflitos de arquivos criar um name space na pasta template
 
 def contato(request):
     return HttpResponse('contato')
