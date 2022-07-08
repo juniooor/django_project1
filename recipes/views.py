@@ -10,6 +10,9 @@ def home(request):
     # para evitar conflitos de arquivos criar um name space na pasta template
 
 def recipe(request,id):
-    return render(request, 'recipes/pages/recipe-view.html', context= {'recipe':make_recipe()}) 
+    return render(request, 'recipes/pages/recipe-view.html',
+     context= {'recipe':make_recipe(),
+    'is_detail_page': True,
+    }) 
 
     # Nova view para o url seguir
